@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width+ initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" name="l" id="l"><br>
+    <input type="number" name="r" id="r"><br>
+    <input type="number" name="k" id="k"><br>
+    <button onClick="done()">Click</button>
+    <p id="res"></p>
+    <script>
+        // l<r
+        function done() {
+            var l = parseInt(document.getElementById("l").value);
+            var r = parseInt(document.getElementById("r").value);
+            var k = parseInt(document.getElementById("k").value);
+            if (l > r) {
+                alert("L must be smaller than r");
+                return;
+
+            }
+            var cnt = 0;
+            for (let i = l; i < r; ++i) {
+                if (i % k == 0) ++cnt;n
+            }
+            document.getElementById("res").innerHTML = ("Numbers divisible by " + k + " between " + l + " and " + r + ": <b>" + cnt + "</b>");
+        }
+    </script>
+</body>
+
+</html>

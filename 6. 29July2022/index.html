@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+<<<<<<< HEAD
+    <input type="number" name="" id="demo1" />
+    <button onclick="calculate().value">Calculate</button>
+    <p id="demo"></p>
+    <!-- <p id="demo1"></p> -->
+    <script>
+      // var p1 = 6,
+      //   p2 = 7;
+      // var totalprice = p1 + p2;
+      // document.getElementById("demo").innerHTML = "Total price: " + totalprice;
+      // let person = {
+      //   firstName: "John",
+      //   lastName: "Doe",
+      //   age: "50",
+      //   eyeColor: "blue",
+      // };
+      // document.getElementById("demo1").innerHTML =
+      //   person.firstName + " , Age is " + person.age;
+
+      // var n = Number("123");
+      // n = n + 2;
+      // var s = "2";
+      // s = s + 2;
+      // document.getElementById("demo").innerHTML =
+      //   "n (123+2) = " + n + ", s(2+2) = " + s;
+      function calculate() {
+        let radius = document.getElementById("demo1").value;
+        let area = Math.PI * (radius * radius);
+        document.getElementById("demo").innerHTML =
+          "The area of circle is: " + area;
+      }
+      calculate();
+=======
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+      var p1 = 6,
+        p2 = 7;
+      var totalprice = p1 + p2;
+      document.getElementById("demo").innerHTML = "Total price: " + totalprice;
+      let person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: "50",
+        eyeColor: "blue",
+      };
+      document.getElementById("demo1").innerHTML =
+        person.firstName + " , Age is " + person.age;
+
+      var n = Number("123");
+      n = n + 2;
+      var s = "2";
+      s = s + 2;
+      document.getElementById("demo").innerHTML =
+        "n (123+2) = " + n + ", s(2+2) = " + s;
+>>>>>>> 56681feb03f45ece5940ddcceaee3c8b28290515
+    </script>
+  </body>
+</html>

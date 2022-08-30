@@ -1,0 +1,122 @@
+*{
+    color:white;
+    font-family: sans-serif;
+}
+
+body,html{    
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+body,.content{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    padding:20px 40px;
+    box-shadow:0 0 10px #fff;
+    position: fixed;
+    background:transparent !important;
+    backdrop-filter:blur(4px); 
+    border-radius: 20px;
+}
+
+
+::placeholder{
+    color: red;
+    font-weight: bold;
+}
+
+input{
+    font-size: 20px;
+    width: 30vw;
+    border-radius: 40px;
+    padding:10px 20px;
+    outline: none;
+    color: #000;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor: pointer;
+    color: #fff;
+    background:#000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 4px rgb(227, 227, 227);
+}
+
+button:active {
+    background-color: #fff;
+    color:black;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
+
+@keyframes animate {
+    to{
+        transform: translateY(7px);
+        box-shadow:none; 
+        background-color:#02265f;
+        color:#fff;
+    }
+}
+
+#result{
+    height: 0px; width: 0px;
+    background:yellow;
+    box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px aquamarine,
+    inset -20px 0 80px cyan,
+    inset 20px 0 300px aquamarine,
+    inset -20px 0 300px cyan,
+    0 0 50px #fff,
+    -10px 0 80px aquamarine,
+    10px 0 80px cyan;
+
+    transition: 0.9s all linear;
+}
+
+#grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+i{
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+#grid div{
+    background:#fff;
+    margin:3px;
+    animation:myAnime 0.6s infinite alternate;
+    /* flex:100%; */
+    box-shadow:
+    0 0 20px #fff,
+    -2px 0 50px aquamarine,
+    2px 0 50px cyan;
+}
+
+@keyframes myAnime {
+    100%{
+        border-radius: 50%;
+    }
+}
+

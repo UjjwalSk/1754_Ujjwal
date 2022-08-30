@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to top, blue, red);
+    font-size: 1.15em;
+    text-align: justify;
+}
+
+h1{
+    color:cyan;
+}
+
+#mytitle{
+    color: chartreuse;
+}
+
+.h1Element{
+    color: yellow;
+}

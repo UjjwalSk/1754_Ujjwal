@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mrD {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #1d62bd;
+            transition: 0.9s all linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mrD"></div><br>
+    <center><button onClick="toggle()">Toggle</button></center>
+    <script>
+        var flag = 1;
+        function toggle() {
+            var div = document.getElementById("mrD");
+            if (flag == 1) {
+                div.style.borderRadius = "50%";
+                flag = 0;
+            } else {
+                div.style.borderRadius = "0%";
+                flag = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>
